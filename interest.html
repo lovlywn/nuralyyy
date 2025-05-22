@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interest - Nature Inspired</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                  url('gre.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #4b3b47;
+
+    }
+nav {
+  font-family: 'Belleza', sans-serif;
+display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  background-color: rgba(255, 240, 245, 0.9);
+}
+    }
+
+    nav .left, nav .right {
+      display: flex;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+nav a {
+  text-decoration: none;
+  color: #6a4e4e;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 8px 14px;
+  background-color: #D0EEC4;
+  border-radius: 50px; 
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(244, 185, 196, 0.3);
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #E39BA6;
+  box-shadow: 0 5px 12px rgba(244, 185, 196, 0.5);
+  transform: scale(1.05);
+}
+
+nav li {
+  margin: 0 10px;
+}
+nav a {
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent; /* No background */
+  box-shadow: none;              /* No shadow */
+  border-radius: 0;              /* No rounded corners */
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #6a4e4e;
+  font-weight: normal;
+  background-color: transparent; 
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+  text-decoration: underline;      color: #E39BA6;                
+}
+
+    .interest-section {
+      padding: 60px 20px;
+          }
+
+    .interest-section h2 {
+      font-size: 2.5em;
+      color: #6a4e4e;
+      margin-bottom: 20px;
+    }
+
+    .interest-list {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .interest-item {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 15px 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .interest-item h3 {
+      margin: 0 0 10px;
+      color: #5a3e3e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aa7e8c;
+      font-size: 0.9em;
+    }
+.lilita-text {
+  font-family: 'Lilita One', cursive;
+  font-size: 2.5em;
+  color: rgb(187,92,98);
+  margin-bottom: 10px;
+}
+.plus-layout {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.center-box {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  font-family: 'Lilita One', cursive;
+font-size: 30px;
+color: rgb(187,92,98);
+}
+
+.box {
+  width: 200px;
+  background: rgba(255,255,255,0.9);
+  border: 2px dashed #d9a4af;
+  border-radius: 16px;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.box img,
+.box iframe,
+.box audio {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+.top-box {
+  top: 3%;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+.right-box {
+  top: 50%;
+  right: 10%;
+width: 18%;
+  transform: translateY(-50%);
+}
+.bottom-box {
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.left-box {
+  top: 55%;
+  left: 9%;
+width: 18%;
+  transform: translateY(-38%);
+}
+.album-cover {
+  width: 50px; 
+  height: px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.poster {
+  width: 50px; 
+   border-radius: px;
+  margin-bottom: 10px;
+}
+footer {
+  margin-top: 100px; 
+}
+html {
+  scroll-behavior: smooth;
+}
+.section-divider {
+      border: none;
+      height: 2px;
+      background: #d9bebe;
+      width: 80%;
+      margin:110px auto;
+      border-radius: 4px;
+    }
+.muse-board {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: left;
+  margin: 10px auto;
+}
+.muse-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px auto 40px;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 10px auto;
+}
+.muse-board .box {
+  position: static;
+  width: 250px;
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.0);/* subtle depth */ 
+}
+
+.muse-desc {
+  font-style: italic;
+  color: #6a4e4e;
+  margin-top: -10px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+  opacity: 0;
+}
+.content-side a {
+  color: #bb5c62;
+  font-family: 'Lilita One', cursive;
+  text-decoration: none;
+}
+
+.content-side a:hover {
+  color: #5a3e3e;
+  text-decoration: underline;
+}
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #bb5c62;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#backToTopBtn:hover {
+  background-color: #a04a55;
+}
+#playPauseBtn {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6a4e4e;
+  padding: 0 15px;
+  font-family: 'Lilita One', cursive;
+}
+.site-logo {
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #6a4e4e;
+  font-family: 'Lilita One', Cursive;
+  background-color: rgba(255, 240, 245, 0.8);
+  padding: 2px 8px;
+  z-index: 1000;
+}
+h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 6px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 4px;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+.notebook {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 50px;
+  padding: 40px;
+  width: 100%;
+  background: url('bggg.jpg');
+  background-size: cover;
+  border: 2px solid #EEC6CC;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.notebook::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 50%;
+  width: 2px;
+  background: #EEC6CC;
+  box-shadow: 0 0 2px #aaa;
+  transform: translateX(-1px);
+}
+
+.page {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.polaroid-caption {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+.polaroid-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+.polaroid {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+width: auto;
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+#playPauseBtn {
+  font-family: 'Lilita One', cursive;
+  font-size: 16px;
+  background-color: #ffe4ec;
+  color: #6a4e4e;
+  border: 2px solid #e6a5b2;
+  border-radius: 10px;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+#playPauseBtn:hover {
+  background-color: #fcd6e0;
+  transform: scale(1.05);
+}
+
+ </style>
+</head>
+<body>
+
+ <nav>
+  <div class="nav-container">
+    <div class="site-logo">AlyyWeb</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="about.html#about-me">About Me</a></li>
+          <li><a href="about.html#favourite">My Fav thing to do</a></li>
+          <li><a href="about.html#education">Education Background</a></li>
+          <li><a href="about.html#life">Life Motto</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="interest.html">Interest</a>
+        <ul class="dropdown-content">
+          <li><a href="interest.html#my-interest">My Interest</a></li>
+          <li><a href="interest.html#muse-board">My Muse Board</a></li>
+        </ul>
+      </li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="goals.html">Goals</a></li>
+    </ul>
+</nav>
+
+<section id="my-interest"class="plus-layout fade-in">
+  <div class="center-box">⋆. 𐙚 ˚My Interest⋆. 𐙚 ˚</div>
+
+  <div class="box top-box">
+  <h3>🎬 Movie</h3><p>Ponyo </p>
+ 
+  <div class="content-side">
+    <img src="ponyo.jpeg" alt="pic" />
+  </div>
+</div>
+
+  <div class="box right-box">
+    <h3>📺 Show</h3>
+    <p>Anne with an E </p>
+ 
+<video width="230" controls>
+  <source src="anne.mp4" type="video/mp4">
+  <source src="anne.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+   </div>
+
+  <div class="box bottom-box">
+  <h3>🍝  Food</h3>
+    <p>Soft Cookies</p>
+ <!-- food image -->
+  <img src="cook.png" alt="pic" class="food" />
+  </div>   
+
+  <div class="box left-box">
+  <h3>🎶 Music</h3>
+  <p>Please, Please, Please, Let Me Get What I Want by The Smiths.</p>
+  <img src="album.jpg" alt="album cover" class="album-cover" />
+  <audio id="audioTrack">
+    <source src="smit.m4a" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+<button id="playPauseBtn">Play ♡ྀི </button>
+</div>
+
+</section>
+<hr class="section-divider">
+<section id="muse-board" class="muse-board fade-in">
+    <p class="lilita-text">My Muse Board─ .✦</p>
+    <p class="muse-desc">A glimpse into the people, art, and moments that inspire me the most.</p>
+  </div>
+
+  <h3>Favorite Artist ✮⋆˙</h3>
+  <div class="polaroid-gallery">
+    <div class="polaroid"><img src="tw.jpg" alt="Twice 1"><div class="polaroid-caption">Twice</div></div>
+    <div class="polaroid"><img src="tw1.jpg" alt="Twice 2"><div class="polaroid-caption">Mitski</div></div>
+    <div class="polaroid"><img src="tw3.jpg" alt="Twice 3"><div class="polaroid-caption">Pink Pantheress</div></div>
+    <div class="polaroid"><img src="tw4.jpg" alt="Twice 4"><div class="polaroid-caption">Aurora</div></div>
+  </div>
+</div>
+
+  <h3>Favorite Character ⋆˚✿˖°</h3>
+  <div class="polaroid-gallery">
+    <div class="polaroid"><img src="saw.jpg" alt="Twice 1"><div class="polaroid-caption">Kuronuma Sawako from Kimi ni Todoke</div></div>
+    <div class="polaroid"><img src="min.jpg" alt="Twice 2"><div class="polaroid-caption">Yoo Seong-a from the frog</div></div>
+    <div class="polaroid"><img src="ani1.jpg" alt="Twice 3"><div class="polaroid-caption">Uzui Tengen from Demon Slayer</div></div>
+    <div class="polaroid"><img src="ni2.jpg" alt="Twice 4"><div class="polaroid-caption">Max from Stranger Things</div></div>
+  </div>
+</div>
+<h3>Favorite Art Paintings ᯓ★</h3>
+
+  <div class="polaroid-gallery">
+    <div class="polaroid"><img src="kane.jpg" alt="Sui Ishida"><div class="polaroid-caption">by Sui Ishida</div></div>
+    <div class="polaroid"><img src="junji.jpg" alt="Chrollo"><div class="polaroid-caption">by Junji Ito</div></div>
+    <div class="polaroid"><img src="musa.jpg" alt="Inoue 1"><div class="polaroid-caption">by Inoue Takehiko</div></div>
+    <div class="polaroid"><img src="bob.jpg" alt="Inoue 2"><div class="polaroid-caption">by Bob Ross</div></div>
+  </div>
+</div>
+
+
+</section>
+<button id="backToTopBtn" title="Back to top">↑</button>
+
+  <footer>
+    © 2025 aly • Bloom with grace 🌸
+  </footer>
+
+<script>
+const btn = document.getElementById("backToTopBtn");
+window.onscroll = function () {
+  btn.style.display = (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? "block" : "none";
+};
+btn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+  const audio = document.getElementById('audioTrack');
+const playPauseBtn = document.getElementById('playPauseBtn');
+
+playPauseBtn.addEventListener('click', function () {
+  if (audio.paused) {
+    audio.play();
+    playPauseBtn.textContent = 'Pause ';
+  } else {
+    audio.pause();
+    playPauseBtn.textContent = 'Play ♡ྀི ';
+  }
+});
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".polaroid img");
+    images.forEach((img) => {
+      img.addEventListener("click", function () {
+        const overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.background = "rgba(0,0,0,0.8)";
+        overlay.style.display = "flex";
+        overlay.style.alignItems = "center";
+        overlay.style.justifyContent = "center";
+        overlay.style.zIndex = "1000";
+        overlay.addEventListener("click", () => overlay.remove());
+
+        const imgLarge = document.createElement("img");
+        imgLarge.src = img.src;
+        imgLarge.style.maxWidth = "90%";
+        imgLarge.style.maxHeight = "90%";
+        imgLarge.style.borderRadius = "10px";
+        overlay.appendChild(imgLarge);
+        document.body.appendChild(overlay);
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html> 

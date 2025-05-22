@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Favourite Scene</title>
+  <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                  url('gre.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #4b3b47;
+    }
+
+    nav {
+      font-family: 'Belleza', sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 15px 30px;
+      background-color: rgba(255, 240, 245, 0.9);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav li {
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #6a4e4e;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 8px 14px;
+      background-color: #D0EEC4;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(244, 185, 196, 0.3);
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #E39BA6;
+      box-shadow: 0 5px 12px rgba(244, 185, 196, 0.5);
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      background: rgba(255,255,255,0.8);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      font-family: 'Lilita One', cursive;
+      color: #bb5c62;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .scene {
+      background: #fbe8eb;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(187, 92, 98, 0.2);
+      margin-bottom: 30px;
+    }
+
+    .scene h2 {
+      margin-top: 0;
+      color: #a03f47;
+    }
+
+    .scene img, .scene video {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
+      box-shadow: 0 3px 6px rgba(187, 92, 98, 0.3);
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="interest.html">Interest</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="goals.html">Goals</a></li>
+      <li><a href="favourite-scene.html">My Favourite Scene</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>My Favourite Scene from Anything</h1>
+
+    <div class="scene">
+      <h2>Movie: Ponyo</h2>
+      <p>This scene where Ponyo and Sosuke watch the ocean waves is so magical and calming. The animation is breathtaking.</p>
+      <img src="ponyo.jpeg" alt="Scene from Ponyo" />
+    </div>
+
+    <div class="scene">
+      <h2>TV Show: Anne with an E</h2>
+      <p>One of my favourite moments is when Anne delivers her passionate speech about imagination and belonging.</p>
+      <video controls>
+        <source src="anne.mp4" type="video/mp4" />
+        Sorry, your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="scene">
+      <h2>Music: Please, Please, Please, Let Me Get What I Want - The Smiths</h2>
+      <p>This song perfectly captures the mood of longing and hope I love.</p>
+      <audio controls>
+        <source src="smit.m4a" type="audio/mpeg" />
+        Sorry, your browser does not support the audio element.
+      </audio>
+    </div>
+  </main>
+
+</body>
+</html>
